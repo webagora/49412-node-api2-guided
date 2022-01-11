@@ -1,3 +1,4 @@
+const Adopter = require('./adopters-model.js')
 
 server.get('/api/adopters', (req, res) => {
   Adopter.find(req.query)
