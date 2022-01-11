@@ -1,8 +1,7 @@
+const express = require('express')
+const router = 
 
 
-// DOGS ENDPOINTS
-// DOGS ENDPOINTS
-// DOGS ENDPOINTS
 server.get('/api/dogs', (req, res) => {
   Dog.find()
     .then(dogs => {
