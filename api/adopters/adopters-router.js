@@ -2,6 +2,8 @@ const express = require('express')
 const Adopter = require('./adopters-model.js')
 const router = express.Router()
 
+// 
+
 router.get('/api/adopters', (req, res) => {
   Adopter.find(req.query)
     .then(adopters => {
