@@ -5,8 +5,8 @@ const dogsRouter = require('./dogs/dogs-router')
 const server = express()
 
 server.use(express.json())
-server.use('api/adopters', adoptersRouter)
-server.use('/')
+server.use('/api/adopters', adoptersRouter)
+server.use('/api/dogs', doro)
 
 server.get('/', (req, res) => {
   res.send(`
