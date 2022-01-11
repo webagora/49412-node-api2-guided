@@ -1,4 +1,3 @@
-
 const express = require('express')
 const adoptersRouter = require('./adopters/adopters-router')
 
