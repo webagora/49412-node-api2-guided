@@ -6,7 +6,7 @@ const server = express()
 
 server.use(express.json())
 server.use('/api/adopters', adoptersRouter)
-server.use('/api/dogs', doro)
+server.use('/api/dogs', dogsRouter)
 
 server.get('/', (req, res) => {
   res.send(`
