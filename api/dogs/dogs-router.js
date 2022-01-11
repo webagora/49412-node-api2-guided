@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 const Dog = require('./dogs-model')
 
-
 router.get('/', (req, res) => {
   Dog.find()
     .then(dogs => {
