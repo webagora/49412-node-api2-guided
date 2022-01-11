@@ -2,7 +2,7 @@ const express = require('express')
 const Adopter = require('./adopters-model.js')
 const router = express.Router()
 
-// ANY VERB /api/adopters (this part is assumed)
+// ANY VERB /api/adopters (this piece of the path is assumed)
 
 router.get('/', (req, res) => {
   Adopter.find(req.query)
