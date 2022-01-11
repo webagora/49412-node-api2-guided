@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   Adopter.findById(req.params.id)
     .then(adopter => {
-      if (!adopter) {
+      if (adopter) {
         res.status(200).json(adopter)
       } else {
         res.status(404).json({ message: 'Adopter not found' })
