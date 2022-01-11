@@ -5,6 +5,7 @@ const express = require('express');
 const adoptersRouter = require('./adopters/adopters-router')
 
 const server = express();
+const foo = 'bar'
 
 server.use(express.json());
 server.use('/api/adopters', adoptersRouter);
